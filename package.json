@@ -29,6 +29,7 @@
   "dependencies": {
     "lie": "~2.3.0",
     "lie-quickeach": "~0.1.2",
-    "lie-use": "~0.1.0"
+    "lie-use": "~0.1.0",
+    "lie-cast": "~0.1.2"
   }
 }

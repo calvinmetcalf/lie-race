@@ -49,4 +49,19 @@ describe("race", function() {
             })
         ]).should.be.rejected.and.become('no');
     });
+    it('should work',function(){
+        return race([
+            promise(function(yes,no){
+                setTimeout(function(){
+                    yes('no');
+                },20);
+            }),
+            'yes',
+            promise(function(yes,no){
+                setTimeout(function(){
+                    yes('seriously no');
+                },30);
+            })
+        ]).should.become('yes');
+    });
 });

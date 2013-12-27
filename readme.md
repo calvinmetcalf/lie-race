@@ -14,7 +14,7 @@ var race = require('lie-race');
 ###race
 
 ```javascript
-race(array (or promise for an array) of promises)
+race(array (or promise for an array) of promises or values)
 ```
 
 resolved with whatever value or error that resolves first.
